@@ -18,7 +18,7 @@ import {AutoGrowDirective} from './auto-grow.directive';
     directives: [AutoGrowDirective]
 })
 export class CoursesComponent {
-    title = "The title of the courses page";
+    title = "Angular 2 quickstart guide";
     courses;
 
     constructor(courseService: CourseService) {

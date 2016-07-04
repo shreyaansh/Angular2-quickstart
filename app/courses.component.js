@@ -26,7 +26,7 @@ System.register(['angular2/core', './course.service', './auto-grow.directive'], 
         execute: function() {
             CoursesComponent = (function () {
                 function CoursesComponent(courseService) {
-                    this.title = "The title of the courses page";
+                    this.title = "Angular 2 quickstart guide";
                     this.courses = courseService.getCourses();
                 }
                 CoursesComponent = __decorate([
