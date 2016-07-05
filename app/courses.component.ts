@@ -6,8 +6,10 @@ import {AutoGrowDirective} from './auto-grow.directive';
     selector: 'courses',
     template: `
         <h2>Courses</h2>
+        <div [textContent]="title"></div>
         {{ title }}
-        <input type = "text" autoGrow/>
+        <input type = "text" bindon-ngModel="auto" autoGrow/>
+        {{ auto }}
         <ul>
             <li *ngFor="#course of courses">
             {{ course }}
@@ -19,6 +21,7 @@ import {AutoGrowDirective} from './auto-grow.directive';
 })
 export class CoursesComponent {
     title = "Angular 2 quickstart guide";
+    auto = "Hello World";
     courses;
 
     constructor(courseService: CourseService) {
