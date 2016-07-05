@@ -34,9 +34,9 @@ System.register(['angular2/core', './course.service', './auto-grow.directive'], 
                 CoursesComponent = __decorate([
                     core_1.Component({
                         selector: 'courses',
-                        template: "\n        <h2>Courses</h2>\n        <font size=18px><i class=\"glyphicon glyphicon-star-empty\" (click)=\"\"></i></font>\n        <div [textContent]=\"title\"></div>\n        {{ title }}\n        <input type = \"text\" bindon-ngModel=\"auto\" autoGrow/>\n        {{ auto }}\n        <br>\n        <br>\n        <ul>\n            <li *ngFor=\"#course of courses\">\n            {{ course }}\n            </li>\n        </ul>\n        ",
-                        providers: [course_service_1.CourseService],
-                        directives: [auto_grow_directive_1.AutoGrowDirective]
+                        template: "\n        <h2>Courses</h2>\n        <div [textContent]=\"title\"></div>\n        {{ title }}\n        <input type = \"text\" bindon-ngModel=\"auto\" autoGrow/>\n        {{ auto }}\n        <br>\n        <br>\n        <ul>\n            <li *ngFor=\"#course of courses\">\n            {{ course }}\n            </li>\n        </ul>\n        ",
+                        directives: [auto_grow_directive_1.AutoGrowDirective],
+                        providers: [course_service_1.CourseService]
                     }), 
                     __metadata('design:paramtypes', [course_service_1.CourseService])
                 ], CoursesComponent);

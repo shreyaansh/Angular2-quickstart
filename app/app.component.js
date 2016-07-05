@@ -34,7 +34,8 @@ System.register(['angular2/core', './courses.component', './authors.component', 
                     core_1.Component({
                         selector: 'my-app',
                         template: '<h1>My First Angular 2 App</h1><courses></courses><authors></authors><publishers></publishers>',
-                        directives: [courses_component_1.CoursesComponent, authors_component_1.AuthorsComponent, publishers_components_1.PublisherComponent]
+                        directives: [courses_component_1.CoursesComponent, authors_component_1.AuthorsComponent, publishers_components_1.PublisherComponent],
+                        providers: []
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
