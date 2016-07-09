@@ -24,7 +24,7 @@ export class AutoGrowDirective {
         if (this.check) {
 
         } else {
-            this.renderer.setElementStyle(this.el.nativeElement, 'width', '120');
+            this.renderer.setElementStyle(this.el.nativeElement, 'width', '100');
         }
     }
 }
