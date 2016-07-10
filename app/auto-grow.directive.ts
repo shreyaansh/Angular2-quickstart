@@ -22,7 +22,7 @@ export class AutoGrowDirective {
     }
     onBlur() {
         if (this.check) {
-
+            //Then do nothing at all
         } else {
             this.renderer.setElementStyle(this.el.nativeElement, 'width', '100');
         }
