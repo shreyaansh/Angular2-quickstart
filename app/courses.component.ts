@@ -8,13 +8,13 @@ import {AutoGrowDirective} from './auto-grow.directive';
         <h2>Courses</h2>
         <div [textContent]="title"></div>
         {{ title }}
-        <input type = "text" bindon-ngModel="auto" autoGrow/>
+        <input type = "text" [(ngModel)]="auto" autoGrow/>
         {{ auto }}
         <br>
         <br>
         <ul>
             <li *ngFor="#course of courses">
-            {{ course }}
+                {{ course }}
             </li>
         </ul>
         `,
