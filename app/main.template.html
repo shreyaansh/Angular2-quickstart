@@ -1,11 +1,16 @@
-<div class="media">
-    <div class="media-left">
-        <a href="#">
-            <img class="media-object" src="http://lorempixel.com/100/100/people" alt="person1">
-        </a>
+<div *ngFor="#tweet of tweets">
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" src="{{ tweet.image }}" alt="person1">
+            </a>
+        </div>
+        <div class="media-body">
+            <div class="media-heading">
+                <h4>{{ tweet.name }} {{ tweet.handle }}</h4>
+            </div>
+            {{ tweet.tweet }}<br>
+            <like></like>
+        </div>
     </div>
-    <div class="media-body">
-        <h4>Media Heading</h4>
-    </div>
-    This is the content in the div that I still have to write up about.
 </div>
