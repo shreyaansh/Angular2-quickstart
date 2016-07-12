@@ -26,6 +26,7 @@ System.register(['angular2/core', './authors.service', './like.component'], func
         execute: function() {
             MainComponent = (function () {
                 function MainComponent(authorsService) {
+                    this.test = true;
                     this.tweets = authorsService.getAuthors();
                     console.log(this.tweets);
                 }

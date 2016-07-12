@@ -11,6 +11,7 @@ import {LikeComponent} from './like.component';
 
 export class MainComponent {
     tweets;
+    test = true;
 
     constructor(authorsService: AuthorsService) {
         this.tweets = authorsService.getAuthors();
