@@ -19,6 +19,6 @@ export class AppComponent {
     }*/
 
     changeOccured() {
-        console.log("Change Occured, Event Updated!");
+        //console.log("Change Occured, Event Updated!");
     }
 }

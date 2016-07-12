@@ -45,7 +45,7 @@ System.register(['angular2/core', './courses.component', './authors.component', 
                     isLiked: true
                 }*/
                 AppComponent.prototype.changeOccured = function () {
-                    console.log("Change Occured, Event Updated!");
+                    //console.log("Change Occured, Event Updated!");
                 };
                 AppComponent = __decorate([
                     core_1.Component({
