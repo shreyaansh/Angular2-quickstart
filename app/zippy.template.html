@@ -1,11 +1,11 @@
 <div class="panel panel-default" (click)="clicked = !clicked" style="cursor: pointer">
     <div class="panel-heading" style="height:40px">
-        <div style="float: left">Custom Heading Here</div>
-        <div style="float:right" class="glyphicon" [ngClass]="{
+        Custom Heading Here
+        <i class="glyphicon" style="float: right" [ngClass]="{
             'glyphicon-chevron-down': !clicked,
             'glyphicon-chevron-up': clicked
         }">
-        </div>
+        </i>
     </div>
     <div class="panel-body" *ngIf="clicked">
         <ng-content></ng-content>
