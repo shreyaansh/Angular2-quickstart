@@ -17,4 +17,8 @@ export class MainComponent {
         this.tweets = authorsService.getAuthors();
         console.log(this.tweets);
     }
+
+    caughtCustomEvent($event) {
+        console.log($event);
+    }
 }

@@ -30,6 +30,9 @@ System.register(['angular2/core', './authors.service', './like.component'], func
                     this.tweets = authorsService.getAuthors();
                     console.log(this.tweets);
                 }
+                MainComponent.prototype.caughtCustomEvent = function ($event) {
+                    console.log($event);
+                };
                 MainComponent = __decorate([
                     core_1.Component({
                         selector: 'main',

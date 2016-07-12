@@ -10,7 +10,7 @@
                 <h4>{{ tweet.name }} {{ tweet.handle }}</h4>
             </div>
             {{ tweet.tweet }}<br>
-            <like></like>
+            <like (change)="caughtCustomEvent($event)"></like>
         </div>
     </div>
 </div>
