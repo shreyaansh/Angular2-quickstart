@@ -38,12 +38,12 @@ System.register(['angular2/core', './courses.component', './authors.component', 
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
-                    this.post = {
-                        title: 'Title',
-                        isFavorite: true,
-                        isLiked: true
-                    };
                 }
+                /*post = {
+                    title: 'Title',
+                    isFavorite: true,
+                    isLiked: true
+                }*/
                 AppComponent.prototype.changeOccured = function () {
                     console.log("Change Occured, Event Updated!");
                 };

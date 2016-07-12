@@ -12,11 +12,11 @@ import {ZippyComponent} from './zippy.component';
     directives: [CoursesComponent, AuthorsComponent, PublisherComponent, LikeComponent, MainComponent, ZippyComponent],
 })
 export class AppComponent {
-    post = {
+    /*post = {
         title: 'Title',
         isFavorite: true,
         isLiked: true
-    }
+    }*/
 
     changeOccured() {
         console.log("Change Occured, Event Updated!");
