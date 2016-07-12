@@ -4,11 +4,12 @@ import {AuthorsComponent} from './authors.component';
 import {PublisherComponent} from './publishers.components';
 import {LikeComponent} from './like.component';
 import {MainComponent} from './main.component';
+import {ZippyComponent} from './zippy.component';
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1><main></main>',
-    directives: [CoursesComponent, AuthorsComponent, PublisherComponent, LikeComponent, MainComponent]
+    template: '<h1>My First Angular 2 App</h1><zippy>Hello</zippy><zippy>World</zippy>',
+    directives: [CoursesComponent, AuthorsComponent, PublisherComponent, LikeComponent, MainComponent, ZippyComponent],
 })
 export class AppComponent {
     post = {

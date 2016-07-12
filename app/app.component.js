@@ -1,4 +1,4 @@
-System.register(['angular2/core', './courses.component', './authors.component', './publishers.components', './like.component', './main.component'], function(exports_1, context_1) {
+System.register(['angular2/core', './courses.component', './authors.component', './publishers.components', './like.component', './main.component', './zippy.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './courses.component', './authors.component', 
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, courses_component_1, authors_component_1, publishers_components_1, like_component_1, main_component_1;
+    var core_1, courses_component_1, authors_component_1, publishers_components_1, like_component_1, main_component_1, zippy_component_1;
     var AppComponent;
     return {
         setters:[
@@ -31,6 +31,9 @@ System.register(['angular2/core', './courses.component', './authors.component', 
             },
             function (main_component_1_1) {
                 main_component_1 = main_component_1_1;
+            },
+            function (zippy_component_1_1) {
+                zippy_component_1 = zippy_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -47,8 +50,8 @@ System.register(['angular2/core', './courses.component', './authors.component', 
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: '<h1>My First Angular 2 App</h1><main></main>',
-                        directives: [courses_component_1.CoursesComponent, authors_component_1.AuthorsComponent, publishers_components_1.PublisherComponent, like_component_1.LikeComponent, main_component_1.MainComponent]
+                        template: '<h1>My First Angular 2 App</h1><zippy>Hello</zippy><zippy>World</zippy>',
+                        directives: [courses_component_1.CoursesComponent, authors_component_1.AuthorsComponent, publishers_components_1.PublisherComponent, like_component_1.LikeComponent, main_component_1.MainComponent, zippy_component_1.ZippyComponent],
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
