@@ -26,7 +26,6 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     core_1.Component({
                         selector: 'zippy',
                         templateUrl: 'app/zippy.template.html',
-                        styles: ['.right { float: right }'],
                         directives: [],
                     }), 
                     __metadata('design:paramtypes', [])
