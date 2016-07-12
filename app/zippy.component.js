@@ -25,8 +25,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 ZippyComponent = __decorate([
                     core_1.Component({
                         selector: 'zippy',
-                        templateUrl: 'app/zippy.template.html',
-                        directives: [],
+                        templateUrl: 'app/zippy.template.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], ZippyComponent);
