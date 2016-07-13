@@ -11,7 +11,7 @@
         <ng-content></ng-content>
         <div class="form">
             <form>
-                <input type="text" name="custom" (click)="onClick($event)">
+                <input type="text" name="custom" (click)="onClick($event)" (keyup)="onKeyPress($event.target.value)">
             </form>
         </div>
     </div>

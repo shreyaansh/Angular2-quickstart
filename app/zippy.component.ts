@@ -17,4 +17,8 @@ export class ZippyComponent {
         console.log('clicked', $event);
         $event.stopPropagation();
     }
+
+    onKeyPress(value) {
+        console.log(value);
+    }
 }

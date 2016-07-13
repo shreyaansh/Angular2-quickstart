@@ -29,6 +29,9 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     console.log('clicked', $event);
                     $event.stopPropagation();
                 };
+                ZippyComponent.prototype.onKeyPress = function (value) {
+                    console.log(value);
+                };
                 __decorate([
                     core_1.Input(), 
                     __metadata('design:type', String)
