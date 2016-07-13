@@ -1,6 +1,7 @@
 import {Component} from 'angular2/core';
 /////////////////\\\\\\\\\\\\\\\\\
 import {ZippyComponent} from './zippy.component';
+import {MainComponent} from './main.component';
 
 @Component({
     selector: 'my-app',
@@ -8,8 +9,9 @@ import {ZippyComponent} from './zippy.component';
     <h1>My First Angular 2 App</h1><br>
     <zippy title="Hello">Hello</zippy>
     <zippy title="World">World</zippy>
+    <main></main>
     `,
-    directives: [ZippyComponent],
+    directives: [ZippyComponent, MainComponent],
 })
 export class AppComponent {
 post = {

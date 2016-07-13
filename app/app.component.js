@@ -1,4 +1,4 @@
-System.register(['angular2/core', './zippy.component'], function(exports_1, context_1) {
+System.register(['angular2/core', './zippy.component', './main.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './zippy.component'], function(exports_1, cont
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, zippy_component_1;
+    var core_1, zippy_component_1, main_component_1;
     var AppComponent;
     return {
         setters:[
@@ -19,6 +19,9 @@ System.register(['angular2/core', './zippy.component'], function(exports_1, cont
             },
             function (zippy_component_1_1) {
                 zippy_component_1 = zippy_component_1_1;
+            },
+            function (main_component_1_1) {
+                main_component_1 = main_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -35,8 +38,8 @@ System.register(['angular2/core', './zippy.component'], function(exports_1, cont
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n    <h1>My First Angular 2 App</h1><br>\n    <zippy title=\"Hello\">Hello</zippy>\n    <zippy title=\"World\">World</zippy>\n    ",
-                        directives: [zippy_component_1.ZippyComponent],
+                        template: "\n    <h1>My First Angular 2 App</h1><br>\n    <zippy title=\"Hello\">Hello</zippy>\n    <zippy title=\"World\">World</zippy>\n    <main></main>\n    ",
+                        directives: [zippy_component_1.ZippyComponent, main_component_1.MainComponent],
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
