@@ -6,12 +6,12 @@
             'glyphicon-chevron-up': clicked
         }"></i>
     </div>
-    <div class="panel-body" *ngIf="clicked">
+    <div class="panel-body" *ngIf="clicked" (click)="onClick($event)" style="cursor: auto">
         {{ content }}
         <ng-content></ng-content>
         <div class="form">
             <form>
-                <input type="text" name="custom" (click)="onClick($event)" (keyup)="onKeyPress($event.target.value)">
+                <input type="text" name="custom" (keyup)="onKeyPress($event.target.value)">
             </form>
         </div>
     </div>
