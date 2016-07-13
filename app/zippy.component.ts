@@ -14,6 +14,7 @@ export class ZippyComponent {
     }
 
     onClick($event) {
-        $event.stopPropogation;
+        console.log('clicked', $event);
+        $event.stopPropagation();
     }
 }

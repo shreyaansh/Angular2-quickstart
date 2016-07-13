@@ -26,7 +26,8 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     this.clicked = !this.clicked;
                 };
                 ZippyComponent.prototype.onClick = function ($event) {
-                    $event.stopPropogation;
+                    console.log('clicked', $event);
+                    $event.stopPropagation();
                 };
                 __decorate([
                     core_1.Input(), 
