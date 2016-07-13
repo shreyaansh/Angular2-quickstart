@@ -11,6 +11,9 @@ export class ZippyComponent {
 
     toggle() {
         this.clicked = !this.clicked;
+    }
 
+    onClick($event) {
+        $event.stopPropogation;
     }
 }

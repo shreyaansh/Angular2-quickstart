@@ -25,6 +25,9 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 ZippyComponent.prototype.toggle = function () {
                     this.clicked = !this.clicked;
                 };
+                ZippyComponent.prototype.onClick = function ($event) {
+                    $event.stopPropogation;
+                };
                 __decorate([
                     core_1.Input(), 
                     __metadata('design:type', String)

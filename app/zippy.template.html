@@ -9,5 +9,10 @@
     <div class="panel-body" *ngIf="clicked">
         {{ content }}
         <ng-content></ng-content>
+        <div class="form">
+            <form>
+                <input type="text" name="custom" (click)="onClick($event)">
+            </form>
+        </div>
     </div>
 </div>
