@@ -7,7 +7,7 @@ import {ZippyComponent} from './zippy.component';
     directives: [ZippyComponent],
 })
 export class AppComponent {
-    post = {
+post = {
         title: 'Title',
         isFavorite: true,
         isLiked: true
