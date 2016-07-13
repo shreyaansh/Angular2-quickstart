@@ -22,6 +22,17 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 function ZippyComponent() {
                     this.clicked = false;
                 }
+                ZippyComponent.prototype.toggle = function () {
+                    this.clicked = !this.clicked;
+                };
+                __decorate([
+                    core_1.Input(), 
+                    __metadata('design:type', String)
+                ], ZippyComponent.prototype, "title", void 0);
+                __decorate([
+                    core_1.Input(), 
+                    __metadata('design:type', String)
+                ], ZippyComponent.prototype, "content", void 0);
                 ZippyComponent = __decorate([
                     core_1.Component({
                         selector: 'zippy',

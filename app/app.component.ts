@@ -4,7 +4,11 @@ import {ZippyComponent} from './zippy.component';
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1><br><zippy>Hello</zippy><zippy>World</zippy>',
+    template: `
+    <h1>My First Angular 2 App</h1><br>
+    <zippy title="Hello">Hello</zippy>
+    <zippy title="World">World</zippy>
+    `,
     directives: [ZippyComponent],
 })
 export class AppComponent {

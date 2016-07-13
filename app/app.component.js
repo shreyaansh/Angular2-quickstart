@@ -35,7 +35,7 @@ System.register(['angular2/core', './zippy.component'], function(exports_1, cont
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: '<h1>My First Angular 2 App</h1><br><zippy>Hello</zippy><zippy>World</zippy>',
+                        template: "\n    <h1>My First Angular 2 App</h1><br>\n    <zippy title=\"Hello\">Hello</zippy>\n    <zippy title=\"World\">World</zippy>\n    ",
                         directives: [zippy_component_1.ZippyComponent],
                     }), 
                     __metadata('design:paramtypes', [])
