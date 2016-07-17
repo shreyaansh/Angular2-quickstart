@@ -19,7 +19,6 @@ post = {
         isFavorite: true,
         isLiked: true
     }
-
     changeOccured() {
         console.log("Change Occured, Event Updated!");
     }
