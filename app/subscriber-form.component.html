@@ -1,37 +1,29 @@
 <form #f="ngForm" (ngSubmit)="onSubmit(f.form)">
     <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" name="text" id="name" class="form-control"
-        ngControl="name"
+        <input type="text" name="name"
         #name="ngForm"
+        ngControl="name"
         required
-        minlength="3">
-        <div *ngIf="name.isTouched && name.errors">
+        minlength="3"
+        class="form-control">
+        <div *ngIf="name.touched && name.errors">
             <div class="alert alert-danger" *ngIf="name.errors.required">
                 The name is required.
             </div>
             <div class="alert alert-danger" *ngIf="name.errors.minlength">
-                The minimum length of the name must be {{ name.errors.minlength.requiredLength }}.
+                The minimum length of the name should be {{ name.errors.minlength.requiredLength }}.
             </div>
         </div>
     </div>
     <div class="form-group">
         <label for="email">Email</label>
-        <input type="text" name="email" id="email"
+        <input type="text" name="email" #email="ngForm"
         class="form-control"
-        ngControl="name" #email="ngForm"
+        ngControl="email" id="email"
         required>
-        <div class="alert alert-danger" *ngIf="email.isTouched && !email.valid">
+    <div class="alert alert-danger" *ngIf="email.touched && !email.valid">
             The email is required.
         </div>
     </div>
-    <div class="form-group">
-        <label for="frequency">Frequency of emails</label>
-        <select class="form-control" name="frequency">
-            <option>Daily</option>
-            <option>Weekly</option>
-            <option>Monthly</option>
-        </select>
-    </div>
-    <button class="btn btn-primary" type="submit" name="submit" [disabled]="!f.valid">Submit</button>
 </form>
