@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1, context_1) {
+System.register(['angular2/core', './subscriber-form.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,16 +10,20 @@ System.register(['angular2/core'], function(exports_1, context_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
+    var core_1, subscriber_form_service_1;
     var SubscriberFormComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (subscriber_form_service_1_1) {
+                subscriber_form_service_1 = subscriber_form_service_1_1;
             }],
         execute: function() {
             SubscriberFormComponent = (function () {
-                function SubscriberFormComponent() {
+                function SubscriberFormComponent(subscriberFormService) {
+                    this.frequencies = subscriberFormService.getFrequencies();
                 }
                 SubscriberFormComponent.prototype.onSubmit = function (form) {
                     console.log(form);
@@ -27,9 +31,10 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 SubscriberFormComponent = __decorate([
                     core_1.Component({
                         selector: 'subscriber-form',
-                        templateUrl: 'app/subscriber-form.component.html'
+                        templateUrl: 'app/subscriber-form.component.html',
+                        providers: [subscriber_form_service_1.SubscriberFormService]
                     }), 
-                    __metadata('design:paramtypes', [])
+                    __metadata('design:paramtypes', [subscriber_form_service_1.SubscriberFormService])
                 ], SubscriberFormComponent);
                 return SubscriberFormComponent;
             }());
