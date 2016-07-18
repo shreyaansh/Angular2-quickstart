@@ -1,14 +1,14 @@
 import {Component} from 'angular2/core';
 /////////////////\\\\\\\\\\\\\\\\\
-import {SubscriberFormComponent} from './subscriber-form.component';
+import {SignUpFormComponent} from './signup-form.component';
 
 @Component({
     selector: 'my-app',
     template: `
     <h1>My First Angular 2 App</h1><br>
-    <subscriber-form></subscriber-form>
+    <signup-form></signup-form>
     `,
-    directives: [SubscriberFormComponent],
+    directives: [SignUpFormComponent],
 })
 export class AppComponent {
 post = {
