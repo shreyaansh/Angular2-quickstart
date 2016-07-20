@@ -21,9 +21,6 @@ System.register(['angular2/core'], function(exports_1, context_1) {
             SignUpFormComponent = (function () {
                 function SignUpFormComponent() {
                 }
-                SignUpFormComponent.prototype.onSubmit = function (form) {
-                    console.log(form);
-                };
                 SignUpFormComponent = __decorate([
                     core_1.Component({
                         selector: 'signup-form',

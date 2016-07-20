@@ -5,7 +5,4 @@ import { Component } from 'angular2/core';
     templateUrl: 'app/signup-form.component.html'
 })
 export class SignUpFormComponent {
-    onSubmit(form) {
-        console.log(form);
-    }
 }
