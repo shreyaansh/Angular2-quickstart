@@ -1,9 +1,9 @@
-<form [ngFormModel]="form">
+<form [ngFormModel]="form" (ngSubmit)="onSubmit()">
     <div class="form-group">
         <label for="username">Username</label>
         <input type="text" name="username" id="username" class="form-control"
         ngControl="username" #username="ngForm">
-        <div class="alert alert-danger" *ngIf="!username.valid">
+        <div class="alert alert-danger" *ngIf="username.touched && !username.valid">
             The username is required.
         </div>
     </div>
@@ -11,7 +11,7 @@
         <label for="password">Password</label>
         <input type="password" name="password" id="password" class="form-control"
         ngControl="password" #password="ngForm">
-        <div class="alert alert-danger" *ngIf="!password.valid">
+        <div class="alert alert-danger" *ngIf="password.touched && !password.valid">
             The password is required.
         </div>
     </div>
