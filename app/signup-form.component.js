@@ -28,6 +28,9 @@ System.register(['angular2/core', 'angular2/common'], function(exports_1, contex
                         password: new common_1.Control('', common_1.Validators.required)
                     });
                 }
+                SignUpFormComponent.prototype.onSubmit = function () {
+                    console.log(this.form.value);
+                };
                 SignUpFormComponent = __decorate([
                     core_1.Component({
                         selector: 'signup-form',

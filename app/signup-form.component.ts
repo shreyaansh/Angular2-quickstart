@@ -10,4 +10,8 @@ export class SignUpFormComponent {
         username: new Control('', Validators.required),
         password: new Control('', Validators.required)
     });
+
+    onSubmit() {
+        console.log(this.form.value);
+    }
 }
