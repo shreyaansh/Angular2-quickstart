@@ -24,8 +24,8 @@ System.register(['angular2/core', 'angular2/common'], function(exports_1, contex
             SignUpFormComponent = (function () {
                 function SignUpFormComponent() {
                     this.form = new common_1.ControlGroup({
-                        username: new common_1.Control(),
-                        password: new common_1.Control()
+                        username: new common_1.Control('', common_1.Validators.required),
+                        password: new common_1.Control('', common_1.Validators.required)
                     });
                 }
                 SignUpFormComponent = __decorate([
