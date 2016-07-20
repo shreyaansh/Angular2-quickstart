@@ -20,6 +20,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         execute: function() {
             SignUpFormComponent = (function () {
                 function SignUpFormComponent() {
+                    this.form = new ControlGroupObject;
                 }
                 SignUpFormComponent = __decorate([
                     core_1.Component({
