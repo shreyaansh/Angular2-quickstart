@@ -11,7 +11,7 @@
         <label for="password">Password</label>
         <input type="password" name="password" id="password" class="form-control"
         ngControl="password" #password="ngForm">
-        <div class="alert alert-danger" *ngIf="password.errors.required">
+        <div class="alert alert-danger" *ngIf="!password.valid">
             The password is required.
         </div>
     </div>
