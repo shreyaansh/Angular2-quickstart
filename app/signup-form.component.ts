@@ -11,7 +11,7 @@ export class SignUpFormComponent {
     uname: string;
 
     constructor(fb: FormBuilder) {
-        this.uname="";
+        this.uname = '';
         this.form = fb.group({
             username: ['', Validators.compose(
                 [Validators.required, UsernameValidators.cannotContainSpace]

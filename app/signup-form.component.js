@@ -26,7 +26,7 @@ System.register(['angular2/core', 'angular2/common', './usernameValidators'], fu
         execute: function() {
             SignUpFormComponent = (function () {
                 function SignUpFormComponent(fb) {
-                    this.uname = "";
+                    this.uname = '';
                     this.form = fb.group({
                         username: ['', common_1.Validators.compose([common_1.Validators.required, usernameValidators_1.UsernameValidators.cannotContainSpace])],
                         password: ['', common_1.Validators.required]
