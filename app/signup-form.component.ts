@@ -1,5 +1,6 @@
 import { Component } from 'angular2/core';
 import { ControlGroup, Control, Validators, FormBuilder } from 'angular2/common';
+import { UsernameValidators } from './usernameValidators';
 
 @Component({
     selector: 'signup-form',
@@ -7,10 +8,14 @@ import { ControlGroup, Control, Validators, FormBuilder } from 'angular2/common'
 })
 export class SignUpFormComponent {
     form: ControlGroup;
+    uname: string;
 
     constructor(fb: FormBuilder) {
+        this.uname="";
         this.form = fb.group({
-            username: ['', Validators.required],
+            username: ['', Validators.compose(
+                [Validators.required, UsernameValidators.cannotContainSpace]
+            )],
             password: ['', Validators.required]
         });
     }
