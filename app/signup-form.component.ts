@@ -19,10 +19,6 @@ export class SignUpFormComponent {
             password: ['', Validators.required]
         });
     }
-    // form = new ControlGroup({
-    //     username: new Control('', Validators.required),
-    //     password: new Control('', Validators.required)
-    // });
 
     onSubmit() {
         console.log(this.form.value);

@@ -32,10 +32,6 @@ System.register(['angular2/core', 'angular2/common', './usernameValidators'], fu
                         password: ['', common_1.Validators.required]
                     });
                 }
-                // form = new ControlGroup({
-                //     username: new Control('', Validators.required),
-                //     password: new Control('', Validators.required)
-                // });
                 SignUpFormComponent.prototype.onSubmit = function () {
                     console.log(this.form.value);
                 };
