@@ -1,4 +1,4 @@
-System.register(['angular2/core', './signup-form.component'], function(exports_1, context_1) {
+System.register(['angular2/core', './passwordChange.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,15 +10,15 @@ System.register(['angular2/core', './signup-form.component'], function(exports_1
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, signup_form_component_1;
+    var core_1, passwordChange_component_1;
     var AppComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (signup_form_component_1_1) {
-                signup_form_component_1 = signup_form_component_1_1;
+            function (passwordChange_component_1_1) {
+                passwordChange_component_1 = passwordChange_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -35,8 +35,8 @@ System.register(['angular2/core', './signup-form.component'], function(exports_1
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n    <h1>My First Angular 2 App</h1><br>\n    <signup-form></signup-form>\n    ",
-                        directives: [signup_form_component_1.SignUpFormComponent],
+                        template: "\n    <h1>My First Angular 2 App</h1><br>\n    <password-change></password-change>\n    ",
+                        directives: [passwordChange_component_1.PasswordChangeComponent],
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
