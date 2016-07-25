@@ -8,6 +8,14 @@ System.register([], function(exports_1, context_1) {
             PasswordChangeValidators = (function () {
                 function PasswordChangeValidators() {
                 }
+                PasswordChangeValidators.oldPasswordCheck = function (control, passwordChangeComponent) {
+                    if (control.value == passwordChangeComponent.oldPassword) {
+                        return { oldPasswordCheck: true };
+                    }
+                    return null;
+                };
+                PasswordChangeValidators.newPassword = function (control) {
+                };
                 return PasswordChangeValidators;
             }());
             exports_1("PasswordChangeValidators", PasswordChangeValidators);
