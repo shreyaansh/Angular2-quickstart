@@ -8,14 +8,14 @@ export class UsernameValidators {
     }
 
     static shouldBeUnique(control: Control) {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                if (control.value == 'sbassi') {
-                    resolve({ shouldBeUnique: true });
-                else
-                    resolve(null);
-                }
-            }, 1000);
-        });
+        // return new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //         if (control.value == 'sbassi') {
+        //             resolve({ shouldBeUnique: true });
+        //         } else {
+        //             resolve(null);
+        //         }
+        //     }, 1000);
+        // });
     }
 }
