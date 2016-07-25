@@ -8,6 +8,7 @@ import { FormBuilder, Control, ControlGroup, Validators } from 'angular2/common'
 
 export class PasswordChangeComponent {
     oldPassword = '1234';
+    newPassword: string;
     form: ControlGroup;
 
     constructor(fb: FormBuilder) {

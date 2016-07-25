@@ -1,4 +1,4 @@
-import { Control } from 'angular2/common';
+import { Control, ControlGroup } from 'angular2/common';
 import { PasswordChangeComponent } from './passwordChange.component';
 
 export class PasswordChangeValidators {
@@ -10,7 +10,12 @@ export class PasswordChangeValidators {
         return null;
     }
 
-    static newPassword (control: Control) {
-        
+    static confirmPassword(group: ControlGroup) {
+        var newPassword = group.find('newPassword').value;
+        var conPassword = group.find('conPassword').value;
+        if (newPassword != conPassword) {
+            return { confirmPassword: true };
+        }
+        return null;
     }
 }

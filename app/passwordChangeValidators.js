@@ -14,7 +14,13 @@ System.register([], function(exports_1, context_1) {
                     }
                     return null;
                 };
-                PasswordChangeValidators.newPassword = function (control) {
+                PasswordChangeValidators.confirmPassword = function (group) {
+                    var newPassword = group.find('newPassword').value;
+                    var conPassword = group.find('conPassword').value;
+                    if (newPassword != conPassword) {
+                        return { confirmPassword: true };
+                    }
+                    return null;
                 };
                 return PasswordChangeValidators;
             }());
