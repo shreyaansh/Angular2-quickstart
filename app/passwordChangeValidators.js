@@ -9,17 +9,17 @@ System.register([], function(exports_1, context_1) {
                 function PasswordChangeValidators() {
                 }
                 PasswordChangeValidators.oldPasswordCheck = function (control, passwordChangeComponent) {
-                    if (control.value == passwordChangeComponent.oldPassword) {
+                    if (control.value != '1234') {
                         return { oldPasswordCheck: true };
                     }
                     return null;
                 };
                 PasswordChangeValidators.confirmPassword = function (group) {
-                    var newPassword = group.find('newPassword').value;
-                    var conPassword = group.find('conPassword').value;
-                    if (newPassword != conPassword) {
-                        return { confirmPassword: true };
-                    }
+                    //var newPassword = group.find('newPassword').value;
+                    //var conPassword = group.find('conPassword').value;
+                    //if (newPassword != conPassword) {
+                    //    return { confirmPassword: true };
+                    //}
                     return null;
                 };
                 return PasswordChangeValidators;

@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/common'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/common', './passwordChangeValidators'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/common'], function(exports_1, contex
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, common_1;
+    var core_1, common_1, passwordChangeValidators_1;
     var PasswordChangeComponent;
     return {
         setters:[
@@ -19,14 +19,18 @@ System.register(['angular2/core', 'angular2/common'], function(exports_1, contex
             },
             function (common_1_1) {
                 common_1 = common_1_1;
+            },
+            function (passwordChangeValidators_1_1) {
+                passwordChangeValidators_1 = passwordChangeValidators_1_1;
             }],
         execute: function() {
             PasswordChangeComponent = (function () {
                 function PasswordChangeComponent(fb) {
                     this.oldPassword = '1234';
                     this.form = fb.group({
-                        oldPassword: ['', common_1.Validators.compose([common_1.Validators.required])],
-                        newPassword: ['', common_1.Validators.compose([common_1.Validators.required, common_1.Validators.minLength(5)])]
+                        oldPassword: ['', common_1.Validators.compose([common_1.Validators.required, passwordChangeValidators_1.PasswordChangeValidators.oldPasswordCheck])],
+                        newPassword: ['', common_1.Validators.compose([common_1.Validators.required, common_1.Validators.minLength(5)])],
+                        conPassword: ['', common_1.Validators.compose([common_1.Validators.required, passwordChangeValidators_1.PasswordChangeValidators.confirmPassword])]
                     });
                 }
                 PasswordChangeComponent = __decorate([
