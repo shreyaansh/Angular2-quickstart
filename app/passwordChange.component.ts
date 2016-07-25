@@ -3,7 +3,7 @@ import { FormBuilder, Control, ControlGroup, Validators } from 'angular2/common'
 
 @Component({
     selector: 'password-change',
-    templateUrl: 'passwordChange.component.html'
+    templateUrl: 'app/passwordChange.component.html'
 })
 
 export class PasswordChangeComponent {

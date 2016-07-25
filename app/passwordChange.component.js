@@ -32,7 +32,7 @@ System.register(['angular2/core', 'angular2/common'], function(exports_1, contex
                 PasswordChangeComponent = __decorate([
                     core_1.Component({
                         selector: 'password-change',
-                        templateUrl: 'passwordChange.component.html'
+                        templateUrl: 'app/passwordChange.component.html'
                     }), 
                     __metadata('design:paramtypes', [common_1.FormBuilder])
                 ], PasswordChangeComponent);
