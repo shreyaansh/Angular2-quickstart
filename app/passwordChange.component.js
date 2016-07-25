@@ -26,7 +26,7 @@ System.register(['angular2/core', 'angular2/common'], function(exports_1, contex
                     this.oldPassword = '1234';
                     this.form = fb.group({
                         oldPassword: ['', common_1.Validators.compose([common_1.Validators.required])],
-                        newPassword: ['', common_1.Validators.compose([common_1.Validators.required])]
+                        newPassword: ['', common_1.Validators.compose([common_1.Validators.required, common_1.Validators.minLength(5)])]
                     });
                 }
                 PasswordChangeComponent = __decorate([
